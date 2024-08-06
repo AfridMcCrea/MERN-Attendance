@@ -115,8 +115,9 @@ const HomePage = () => {
 
   const { day, date, month, year } = getCurrentDateInfo();
 
-  const handleEdit = async(subjectId)=>{
-    navigate(`/editattendance/:${subjectId}`);
+  
+  const handleEdit = (subject) => {
+    navigate(`/editattendance/${subject._id}`, { state: { subject } });
   };
 
   return (
