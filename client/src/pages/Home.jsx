@@ -122,7 +122,7 @@ const HomePage = () => {
 
   return (
     <div className="p-3 gap-2">
-      <div className="flex flex-col items-center mb-4">
+      <div className="flex flex-col  items-center mb-4">
         <span className="text-xl shadow-lg px-8 py-2 rounded-full bg-yellow-300 dark:text-black ">{`${date} ${month} ${year}`}</span>
       </div>
       <WeeklyCalendar currentDay={currentDay} onSelectDay={setCurrentDay} />
@@ -184,7 +184,7 @@ const HomePage = () => {
                   {classesToAttend !== 1 ? "es" : ""} to reach 75%.
                 </p>
               )}
-              <div className="items-center justify-center mx-[100px]">
+              <div className="flex items-center justify-center mx-[100px]">
                 <button
                   className="bg-pink-500 text-white p-2 mr-2 rounded-md"
                   onClick={() => handleUpdateAttendance(subject._id, "present")}
