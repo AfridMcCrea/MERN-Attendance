@@ -6,11 +6,11 @@ const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 const WeeklyCalendar = ({ currentDay, onSelectDay }) => {
   return (
-    <div className="flex justify-around mb-4">
+    <div className="flex justify-around mb-4 sm:justify-center lg:p-5">
       {daysOfWeek.map((day, index) => (
         <div
           key={index}
-          className={`p-2 text-center cursor-pointer ${
+          className={`p-2 sm:px-10 text-center cursor-pointer ${
             currentDay === day
               ? "bg-yellow-300 dark:text-black"
               : "bg-gray-200 dark:bg-black"
